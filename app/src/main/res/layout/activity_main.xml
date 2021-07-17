@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="0.5dp"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:layout_weight="1"/>
+        <GridView
+            android:id="@+id/gridTxtTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:numColumns="20"
+            android:layout_weight="5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <GridView
+            android:id="@+id/gridTxtLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintDimensionRatio="1:1"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="0.5dp"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:layout_weight="1"/>
+        <GridView
+            android:id="@+id/gridImg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="1dp"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:numColumns="20"
+            android:layout_weight="5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text = "Type Query"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:gravity="center"
+            android:layout_weight="2.5"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="GALLERY"
+            android:gravity="center"
+            android:layout_weight="2.5"/>
+
+
+    </LinearLayout>
+</LinearLayout>
